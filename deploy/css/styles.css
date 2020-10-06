@@ -379,14 +379,36 @@ h2 {
   @media (min-width: 1200px) {
     h2 {
       font-size: 1.875rem; } }
+h3 {
+  color: #1E1E1E;
+  font-family: 'Lora', serif;
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.0625rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.625rem;
+      letter-spacing: 0.0625rem; } }
+  @media (min-width: 992px) {
+    h3 {
+      font-size: 1.625rem;
+      letter-spacing: 0.0625rem; } }
+  @media (min-width: 1200px) {
+    h3 {
+      font-size: 1.625rem; } }
 p {
   color: #1E1E1E;
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 16px; }
   @media (min-width: 768px) {
     p {
       font-size: 1.125rem; } }
@@ -455,8 +477,20 @@ textarea {
 /* =============
     Celebs
 ============= */
+#celebs-content #marilyn-container #marilyn-container-photo {
+  background-image: url("../img/celebs/joe.png");
+  background-size: cover;
+  height: 40vh; }
+
+#celebs-content #marilyn-container #marilyn-container-text hr {
+  border: solid 5px #C13D49; }
+
+#celebs-content #marilyn-container #marilyn-container-text h3 {
+  margin: 0 20px; }
+
+#celebs-content #marilyn-container #marilyn-container-text p {
+  margin: 0 20px; }
+
 /* =============
     Section 1
 ============= */
-div {
-  height: 40vh; }

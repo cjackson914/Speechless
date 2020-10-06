@@ -56,14 +56,41 @@ h2 {
 	}
 }
 
+h3 {
+	color: $charcoal;
+    font-family: 'Lora', serif;
+	font-size: rem-calc(26);
+	line-height: rem-calc(26);
+	letter-spacing: rem-calc(1);
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 16px;
+
+	@include md {
+		font-size: rem-calc(26);
+		letter-spacing: rem-calc(1);
+	}
+
+	@include lg {
+		font-size: rem-calc(26);
+		letter-spacing: rem-calc(1);
+	}
+
+	@include xl {
+		font-size: rem-calc(26);
+	}
+}
+
 p {
 	color: $charcoal;
 	font-family: 'Jost', sans-serif;
 	font-size: rem-calc(16);
 	font-weight: 300;
-	line-height: rem-calc(24);
+	line-height: rem-calc(20);
 	margin: 0;
 	padding: 0;
+	padding-bottom: 16px;
 
 	@include md {
 		font-size: rem-calc(18);

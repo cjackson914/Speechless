@@ -1,3 +1,30 @@
 /* =============
     Celebs
 ============= */
+
+#celebs-content {
+
+    #marilyn-container {
+
+        #marilyn-container-photo{
+            background-image: url("../img/celebs/joe.png");
+            background-size: cover;
+            height: 40vh;
+        }
+
+        #marilyn-container-text{
+            hr{
+                border: solid 5px $red;
+            }
+            h3{
+                margin: 0 20px;
+            }
+
+            p{
+                margin: 0 20px;
+            }
+
+        }
+    }
+
+}

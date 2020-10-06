@@ -9,6 +9,39 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/assets/img/celebs/james.png": {
+		"ft": 32768,
+		"iS": 651972,
+		"oA": 0,
+		"oAP": "/assets/img/celebs/james.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/celebs/joe.png": {
+		"ft": 32768,
+		"iS": 698167,
+		"oA": 0,
+		"oAP": "/assets/img/celebs/joe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/celebs/marilyn.png": {
+		"ft": 32768,
+		"iS": 1302370,
+		"oA": 0,
+		"oAP": "/assets/img/celebs/marilyn.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
