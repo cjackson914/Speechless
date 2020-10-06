@@ -477,19 +477,25 @@ textarea {
 /* =============
     Celebs
 ============= */
-#celebs-content #marilyn-container #marilyn-container-photo {
-  background-image: url("../img/celebs/joe.png");
-  background-size: cover;
-  height: 40vh; }
-
-#celebs-content #marilyn-container #marilyn-container-text hr {
-  border: solid 5px #C13D49; }
-
-#celebs-content #marilyn-container #marilyn-container-text h3 {
-  margin: 0 20px; }
-
-#celebs-content #marilyn-container #marilyn-container-text p {
-  margin: 0 20px; }
+#celebs-content #marilyn-container {
+  display: grid;
+  grid-template-areas: "marilyn-photo" "marilyn-text"; }
+  #celebs-content #marilyn-container #marilyn-container-photo {
+    grid-area: marilyn-photo; }
+    #celebs-content #marilyn-container #marilyn-container-photo div {
+      background-image: url("../img/celebs/marilyn.png");
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: auto; }
+  #celebs-content #marilyn-container #marilyn-container-text {
+    grid-area: marilyn-text; }
+    #celebs-content #marilyn-container #marilyn-container-text hr {
+      border: solid 5px #C13D49; }
+    #celebs-content #marilyn-container #marilyn-container-text h3 {
+      margin: 0 20px; }
+    #celebs-content #marilyn-container #marilyn-container-text p {
+      margin: 0 20px; }
 
 /* =============
     Section 1

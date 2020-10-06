@@ -5,14 +5,27 @@
 #celebs-content {
 
     #marilyn-container {
+        display: grid;
+        grid-template-areas: "marilyn-photo"
+        "marilyn-text";
 
         #marilyn-container-photo{
-            background-image: url("../img/celebs/joe.png");
-            background-size: cover;
-            height: 40vh;
+            grid-area: marilyn-photo;
+            div{
+                background-image: url("../img/celebs/marilyn.png");
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: auto;
+            }
+                
+
+            
+
         }
 
         #marilyn-container-text{
+            grid-area: marilyn-text;
             hr{
                 border: solid 5px $red;
             }
