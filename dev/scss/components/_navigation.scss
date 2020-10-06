@@ -1,0 +1,53 @@
+/* =============
+    Navigation
+============= */
+
+#nav {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "what story"
+    "tips celebs"
+    "stutter stutter";
+    
+
+}
+
+.what{
+    grid-area: what;
+    background-color: $purple;
+    padding: 20px;
+}
+
+.story{
+    grid-area: story;
+    background-color: $blue;
+    padding: 20px;
+    h1{
+        line-height: rem-calc(30);
+    }  
+
+}
+
+.tips{
+    grid-area: tips;
+    background-color: $green;
+    padding: 20px;
+}
+
+.celebs{
+    grid-area: celebs;
+    background-color: $red;
+    padding: 20px;
+}
+
+.stutter{
+    grid-area: stutter;
+    background-color: $orange;
+    padding: 20px;
+    text-align: right;
+}
+
