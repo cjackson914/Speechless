@@ -1,5 +1,15 @@
 // import {gsap} from "gsap";
 
+import {celebsMarilynAnimation} from "./celebs-marilyn.js";
+import {celebsJoeAnimation} from "./celebs-joe.js";
+import {celebsJamesAnimation} from "./celebs-james.js";
+
+
+// call celebs Marilyn Photo function
+celebsMarilynAnimation();
+celebsJoeAnimation();
+celebsJamesAnimation();
+
 // import {triangleYellowAnimation} from "./triangleYellow.js";
 // import {triangleOrangeAnimation} from "./triangleOrange.js";
 // import {rectangleBlueAnimation} from "./rectangleBlue.js";

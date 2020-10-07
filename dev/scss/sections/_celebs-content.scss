@@ -4,22 +4,66 @@
 
 #celebs-content {
 
+    #celebs-header{
+        background-color: $red;
+        height: 10vh;
+        padding: 20px;
+        position: relative;
+        
+
+        @include md{
+            height: 30vh;
+        }
+
+        #burger-container{
+            color: white;
+            font-size: rem-calc(30);
+            text-align: right;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+
+            
+        }
+    }
+
     #marilyn-container {
         display: grid;
         grid-template-areas: "marilyn-photo"
         "marilyn-text";
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        margin-top: 50px;
+
+        @include md{
+            grid-template-areas: "marilyn-photo marilyn-text";
+            grid-template-columns: 5fr 3fr;
+            margin-top: 75px;
+        }
+
+        @include lg{
+            grid-template-areas: "marilyn-photo . marilyn-text .";
+            grid-template-columns: 7fr 1fr 3fr 1fr;
+        }
 
         #marilyn-container-photo{
             grid-area: marilyn-photo;
-            div{
-                background-image: url("../img/celebs/marilyn.png");
-                background-position: center;
-                background-size: cover;
-                width: 100%;
-                height: auto;
-            }
-                
+            background-image: url("../img/celebs/marilyn.png");
+                background-position: right;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                // width: auto;
+                // height: 100vh;
+                width: auto;
+                height: 70vh;
+                margin-right: 20px;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: right;
 
+                @include md{
+                    height: auto;
+                }
             
 
         }
@@ -28,6 +72,7 @@
             grid-area: marilyn-text;
             hr{
                 border: solid 5px $red;
+                margin-top: 0;
             }
             h3{
                 margin: 0 20px;
@@ -35,6 +80,159 @@
 
             p{
                 margin: 0 20px;
+            }
+
+            @include md {
+                padding-top: 100px;
+            }
+
+            @include lg {
+                padding-bottom: 150px;
+                padding-top: 150px;
+            }
+
+        }
+    }
+
+    #joe-container {
+        display: grid;
+        grid-template-areas: "joe-photo"
+        "joe-text";
+        grid-template-columns: 100%;
+        margin-top: 50px;
+
+        @include md{
+            grid-template-areas: "joe-text joe-photo";
+            grid-template-columns: 50% auto;
+            margin-top: 75px;
+        }
+
+        @include lg{
+            grid-template-areas: ". joe-text . joe-photo";
+            grid-template-columns: 1fr 4fr 1fr 6fr;
+        }
+
+        #joe-container-photo{
+            grid-area: joe-photo;
+            background-image: url("../img/celebs/joe.png");
+                background-position: left;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                // width: 100%;
+                // height: auto;
+                width: auto;
+                height: 80vh;
+                background-position: right;
+                margin-left: 20px;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+
+                @include md{
+                    height: 70vh;
+                }
+                @include lg{
+                    background-position: left;
+                    height: auto;
+                }
+                
+            
+
+        }
+
+        #joe-container-text{
+            grid-area: joe-text;
+
+            hr{
+                border: solid 5px $green;
+                margin-top: 0;
+            }
+            h3{
+                margin: 0 20px;
+            }
+
+            p{
+                margin: 0 20px;
+            }
+
+            @include md {
+                // padding-top: 100px;
+            }
+
+            @include lg {
+                padding-bottom: 150px;
+                padding-top: 150px;
+            }
+
+        }
+    }
+
+
+    #james-container {
+        display: grid;
+        grid-template-areas: "james-photo"
+        "james-text";
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+
+        @include md{
+            grid-template-areas: "james-photo james-text";
+            grid-template-columns: 5fr 3fr;
+            margin-top: 75px;
+        }
+
+        @include lg{
+            grid-template-areas: "james-photo . james-text .";
+            grid-template-columns: 7fr 1fr 3fr 1fr;
+        }
+
+        #james-container-photo{
+            grid-area: james-photo;
+            background-image: url("../img/celebs/james.png");
+                background-position: right;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                width: auto;
+                height: 70vh;
+                margin-left: 20px;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+
+                @include md{
+                    height: 75vh;
+                }
+                @include lg{
+                    background-position: left;
+                    height: auto;
+                }
+
+                @include xl{
+                    background-position: left;
+                }
+                
+
+        }
+
+        #james-container-text{
+            grid-area: james-text;
+            hr{
+                border: solid 5px $orange;
+                margin-top: 0;
+            }
+            h3{
+                margin: 0 20px;
+            }
+
+            p{
+                margin: 0 20px;
+            }
+
+            @include md {
+                // padding-bottom: 100px;
+            }
+
+            @include lg {
+                padding-bottom: 150px;
+                padding-top: 150px;
             }
 
         }
