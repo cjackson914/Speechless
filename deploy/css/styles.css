@@ -601,7 +601,7 @@ textarea {
         height: auto; } }
     @media (min-width: 1200px) {
       #celebs-content #james-container #james-container-photo {
-        background-position: left; } }
+        background-position: right; } }
   #celebs-content #james-container #james-container-text {
     grid-area: james-text; }
     #celebs-content #james-container #james-container-text hr {

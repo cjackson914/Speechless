@@ -16,7 +16,7 @@ marilynTL.from("#marilyn-container-photo", {duration: 1, x: -400, alpha:0})
 
 export function celebsMarilynAnimation(){
     ScrollTrigger.create({
-        markers:true,
+        // markers:true,
         // stagger: 2,
         animation: marilynTL,
         toggleActions: "play none none none",

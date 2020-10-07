@@ -16,7 +16,7 @@ joeTL.from("#joe-container-photo", {duration: 1, x: 2000, alpha:0})
 
 export function celebsJoeAnimation(){
     ScrollTrigger.create({
-        markers:true,
+        // markers:true,
         // stagger: 2,
         animation: joeTL,
         toggleActions: "play none none none",

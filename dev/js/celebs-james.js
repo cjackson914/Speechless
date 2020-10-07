@@ -15,7 +15,7 @@ jamesTL.from("#james-container-photo", {duration: 1, x: -400, alpha:0})
 
 export function celebsJamesAnimation(){
     ScrollTrigger.create({
-        markers:true,
+        // markers:true,
         // stagger: 2,
         animation: jamesTL,
         toggleActions: "play none none none",
