@@ -479,6 +479,22 @@ textarea {
     border: none;
     cursor: pointer; }
 
+#masthead-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  position: -webkit-sticky;
+  /* Safari */
+  top: 0;
+  z-index: 1000;
+  background-color: #fff; }
+  #masthead-container img {
+    width: 300px;
+    padding: 20px; }
+    @media (min-width: 768px) {
+      #masthead-container img {
+        padding: 25px; } }
 /* =============
     Header
 ============= */
@@ -542,10 +558,6 @@ textarea {
     @media (min-width: 768px) {
       #celebs-content #marilyn-container-text {
         padding-top: 100px; } }
-    @media (min-width: 992px) {
-      #celebs-content #marilyn-container-text {
-        padding-bottom: 150px;
-        padding-top: 150px; } }
 #joe-container {
   display: grid;
   grid-template-areas: "joe-photo" "joe-text";
@@ -581,7 +593,6 @@ textarea {
       margin: 0 20px; }
     @media (min-width: 992px) {
       #joe-container #joe-container-text {
-        padding-bottom: 150px;
         padding-top: 150px; } }
 #james-container {
   display: grid;
@@ -619,7 +630,6 @@ textarea {
       margin: 0 20px; }
     @media (min-width: 992px) {
       #james-container #james-container-text {
-        padding-bottom: 150px;
         padding-top: 150px; } }
 /* =============
     Section 1

@@ -60,6 +60,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/global/SpeechlessMasthead.png": {
+		"ft": 32768,
+		"iS": 17981,
+		"oA": 0,
+		"oAP": "/deploy/img/global/SpeechlessMasthead.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -150,6 +161,14 @@
 		"oA": 1,
 		"oAP": "/dev/global/head.html",
 		"oF": 0
+		},
+	"/dev/global/masthead.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/masthead.html",
+		"oF": 1
 		},
 	"/dev/global/navigation.kit": {
 		"cB": 0,
@@ -332,6 +351,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/components/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/components/_masthead.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_masthead.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

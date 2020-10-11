@@ -35,5 +35,5 @@ celebsJamesAnimation();
 
 $("#burger-icon").on("click",burgerClicked);
 
-$(".stutter button").on("click",closeClicked);
+$("#close-icon").on("click",closeClicked);
 
