@@ -19,7 +19,12 @@
 
 
     @include md{
-        height: 30vh;
+        height: 20vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "what tips celebs"
+        "story stutter stutter";
     }
 
     display: none;
@@ -64,6 +69,7 @@
     padding: 20px;
     //text-align: right;
     position: relative;
+    
 
 #close-icon{
         position: absolute;
@@ -74,6 +80,13 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        transition: 0.25s;
+        &:hover {
+            color:$lightorange;
+        }
+        &:active {
+            color:$lightorange;
+        }
 
     }
 }

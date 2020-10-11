@@ -33,6 +33,13 @@
 
         i{
             cursor: pointer;
+            transition: 0.25s;
+            &:hover {
+                color:$lightred;
+            }
+            &:active {
+                color:$lightred;
+            }
         }
     }
 }

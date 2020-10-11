@@ -441,7 +441,10 @@ textarea {
   display: none; }
   @media (min-width: 768px) {
     #nav {
-      height: 30vh; } }
+      height: 20vh;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "what tips celebs" "story stutter stutter"; } }
 .what {
   grid-area: what;
   background-color: #825075;
@@ -477,7 +480,12 @@ textarea {
     color: #fff;
     background-color: transparent;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.25s; }
+    .stutter #close-icon:hover {
+      color: #F5BD9F; }
+    .stutter #close-icon:active {
+      color: #F5BD9F; }
 
 #masthead-container {
   display: flex;
@@ -517,7 +525,12 @@ textarea {
     justify-content: flex-end;
     align-items: flex-end; }
     #celebs-header #burger-container i {
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 0.25s; }
+      #celebs-header #burger-container i:hover {
+        color: #FCADB5; }
+      #celebs-header #burger-container i:active {
+        color: #FCADB5; }
 
 #celebs-content {
   overflow: hidden; }
