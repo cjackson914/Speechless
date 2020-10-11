@@ -437,7 +437,7 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "what story" "tips celebs" "stutter stutter";
-  width: 100%;
+  width: 100vw;
   display: none; }
   @media (min-width: 768px) {
     #nav {
@@ -445,10 +445,19 @@ textarea {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "what tips celebs" "story stutter stutter"; } }
+  #nav a {
+    display: inline-block;
+    height: 100%;
+    width: 100%; }
+
 .what {
   grid-area: what;
   background-color: #825075;
   padding: 20px; }
+  .what:hover {
+    background-color: #54334B; }
+  .what:active {
+    color: #54334B; }
 
 .story {
   grid-area: story;
@@ -456,22 +465,38 @@ textarea {
   padding: 20px; }
   .story h1 {
     line-height: 1.875rem; }
+  .story:hover {
+    background-color: #2B546C; }
+  .story:active {
+    color: #2B546C; }
 
 .tips {
   grid-area: tips;
   background-color: #4D9D8A;
   padding: 20px; }
+  .tips:hover {
+    background-color: #306A5F; }
+  .tips:active {
+    color: #306A5F; }
 
 .celebs {
   grid-area: celebs;
   background-color: #C13D49;
   padding: 20px; }
+  .celebs:hover {
+    background-color: #912933; }
+  .celebs:active {
+    color: #912933; }
 
 .stutter {
   grid-area: stutter;
   background-color: #C57149;
   padding: 20px;
   position: relative; }
+  .stutter:hover {
+    background-color: #9B5936; }
+  .stutter:active {
+    color: #9B5936; }
   .stutter #close-icon {
     position: absolute;
     font-size: 1.875rem;
@@ -480,6 +505,7 @@ textarea {
     color: #fff;
     background-color: transparent;
     border: none;
+    padding: 10px 0 0 10px;
     cursor: pointer;
     transition: 0.25s; }
     .stutter #close-icon:hover {

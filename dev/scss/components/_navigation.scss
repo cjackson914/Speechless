@@ -15,7 +15,7 @@
     "what story"
     "tips celebs"
     "stutter stutter";
-    width: 100%;
+    width: 100vw;
 
 
     @include md{
@@ -28,6 +28,12 @@
     }
 
     display: none;
+
+    a{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
     
 
 }
@@ -36,16 +42,27 @@
     grid-area: what;
     background-color: $purple;
     padding: 20px;
+    &:hover {
+        background-color:$darkpurple;
+    }
+    &:active {
+        color:$darkpurple;
+    }
 }
 
 .story{
     grid-area: story;
     background-color: $blue;
     padding: 20px;
-    
     h1{
         line-height: rem-calc(30);
     }  
+    &:hover {
+        background-color:$darkblue;
+    }
+    &:active {
+        color:$darkblue;
+    }
 
     
 
@@ -55,20 +72,37 @@
     grid-area: tips;
     background-color: $green;
     padding: 20px;
+    &:hover {
+        background-color:$darkgreen;
+    }
+    &:active {
+        color:$darkgreen;
+    }
 }
 
 .celebs{
     grid-area: celebs;
     background-color: $red;
     padding: 20px;
+    &:hover {
+        background-color:$darkred;
+    }
+    &:active {
+        color:$darkred;
+    }
 }
 
 .stutter{
     grid-area: stutter;
     background-color: $orange;
     padding: 20px;
-    //text-align: right;
     position: relative;
+    &:hover {
+        background-color:$darkorange;
+    }
+    &:active {
+        color:$darkorange;
+    }
     
 
 #close-icon{
@@ -79,6 +113,7 @@
         color:$white;
         background-color: transparent;
         border: none;
+        padding: 10px 0 0 10px;
         cursor: pointer;
         transition: 0.25s;
         &:hover {
