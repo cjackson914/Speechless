@@ -332,6 +332,14 @@ a {
   text-decoration: none;
   transition: 0.25s; }
 
+@media (min-width: 1200px) {
+  .xl-grid {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". content ."; }
+    .xl-grid > div {
+      grid-area: content; } }
+
 /* =============
     Typography
 ============= */
@@ -461,8 +469,9 @@ textarea {
   background-color: #C57149;
   padding: 20px;
   position: relative; }
-  .stutter button {
+  .stutter #close-icon {
     position: absolute;
+    font-size: 1.875rem;
     right: 20px;
     bottom: 20px;
     color: #fff;
@@ -494,137 +503,122 @@ textarea {
     #celebs-header #burger-container i {
       cursor: pointer; }
 
-#celebs-content #marilyn-container {
-  display: grid;
-  grid-template-areas: "marilyn-photo" "marilyn-text";
-  grid-template-columns: 1fr;
-  grid-template-rows: 2; }
-  @media (min-width: 768px) {
-    #celebs-content #marilyn-container {
-      grid-template-areas: "marilyn-photo marilyn-text";
-      grid-template-columns: 5fr 3fr; } }
-  @media (min-width: 992px) {
-    #celebs-content #marilyn-container {
-      grid-template-areas: "marilyn-photo . marilyn-text .";
-      grid-template-columns: 7fr 1fr 3fr 1fr; } }
-  #celebs-content #marilyn-container #marilyn-container-photo {
-    grid-area: marilyn-photo;
-    background-image: url("../img/celebs/marilyn.png");
-    background-position: right;
-    width: auto;
-    height: 70vh;
-    margin-right: 20px;
-    margin-top: 75px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right; }
+#celebs-content {
+  overflow: hidden; }
+  #celebs-content #marilyn-container {
+    display: grid;
+    grid-template-areas: "marilyn-photo" "marilyn-text";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2; }
     @media (min-width: 768px) {
-      #celebs-content #marilyn-container #marilyn-container-photo {
-        height: auto; } }
-  #celebs-content #marilyn-container #marilyn-container-text {
-    grid-area: marilyn-text; }
-    #celebs-content #marilyn-container #marilyn-container-text hr {
+      #celebs-content #marilyn-container {
+        grid-template-areas: "marilyn-photo marilyn-text";
+        grid-template-columns: 5fr 3fr; } }
+    @media (min-width: 992px) {
+      #celebs-content #marilyn-container {
+        grid-template-areas: "marilyn-photo . marilyn-text .";
+        grid-template-columns: 7fr 1fr 3fr 1fr; } }
+    #celebs-content #marilyn-container #marilyn-container-photo {
+      grid-area: marilyn-photo;
+      margin-right: 20px; }
+      @media (min-width: 768px) {
+        #celebs-content #marilyn-container #marilyn-container-photo {
+          margin-right: 0px; } }
+    #celebs-content #marilyn-container img {
+      width: 100%;
+      height: auto;
+      margin-top: 75px;
+      object-fit: cover; }
+  #celebs-content #marilyn-container-text {
+    grid-area: marilyn-text;
+    overflow: hidden; }
+    #celebs-content #marilyn-container-text hr {
       border: solid 5px #C13D49;
       margin-top: 0; }
-    #celebs-content #marilyn-container #marilyn-container-text h3 {
+    #celebs-content #marilyn-container-text h3 {
       margin: 0 20px; }
-    #celebs-content #marilyn-container #marilyn-container-text p {
+    #celebs-content #marilyn-container-text p {
       margin: 0 20px; }
     @media (min-width: 768px) {
-      #celebs-content #marilyn-container #marilyn-container-text {
+      #celebs-content #marilyn-container-text {
         padding-top: 100px; } }
     @media (min-width: 992px) {
-      #celebs-content #marilyn-container #marilyn-container-text {
+      #celebs-content #marilyn-container-text {
         padding-bottom: 150px;
         padding-top: 150px; } }
-#celebs-content #joe-container {
+#joe-container {
   display: grid;
   grid-template-areas: "joe-photo" "joe-text";
   grid-template-columns: 100%;
   margin-top: 50px; }
   @media (min-width: 768px) {
-    #celebs-content #joe-container {
+    #joe-container {
       grid-template-areas: "joe-text joe-photo";
       grid-template-columns: 50% auto;
       margin-top: 75px; } }
   @media (min-width: 992px) {
-    #celebs-content #joe-container {
+    #joe-container {
       grid-template-areas: ". joe-text . joe-photo";
       grid-template-columns: 1fr 4fr 1fr 6fr; } }
-  #celebs-content #joe-container #joe-container-photo {
-    grid-area: joe-photo;
-    background-image: url("../img/celebs/joe.png");
-    background-position: left;
-    width: auto;
-    height: 80vh;
-    background-position: right;
-    margin-left: 20px;
-    background-size: auto 100%;
-    background-repeat: no-repeat; }
-    @media (min-width: 768px) {
-      #celebs-content #joe-container #joe-container-photo {
-        height: 70vh; } }
-    @media (min-width: 992px) {
-      #celebs-content #joe-container #joe-container-photo {
-        background-position: left;
-        height: auto; } }
-  #celebs-content #joe-container #joe-container-text {
+  #joe-container #joe-container-photo {
+    grid-area: joe-photo; }
+    #joe-container #joe-container-photo img {
+      width: 100%;
+      height: auto;
+      margin-left: 20px;
+      object-fit: cover; }
+      @media (min-width: 768px) {
+        #joe-container #joe-container-photo img {
+          margin-left: 0px; } }
+  #joe-container #joe-container-text {
     grid-area: joe-text; }
-    #celebs-content #joe-container #joe-container-text hr {
+    #joe-container #joe-container-text hr {
       border: solid 5px #4D9D8A;
       margin-top: 0; }
-    #celebs-content #joe-container #joe-container-text h3 {
+    #joe-container #joe-container-text h3 {
       margin: 0 20px; }
-    #celebs-content #joe-container #joe-container-text p {
+    #joe-container #joe-container-text p {
       margin: 0 20px; }
     @media (min-width: 992px) {
-      #celebs-content #joe-container #joe-container-text {
+      #joe-container #joe-container-text {
         padding-bottom: 150px;
         padding-top: 150px; } }
-#celebs-content #james-container {
+#james-container {
   display: grid;
   grid-template-areas: "james-photo" "james-text";
   grid-template-columns: 1fr;
   margin-top: 50px; }
   @media (min-width: 768px) {
-    #celebs-content #james-container {
+    #james-container {
       grid-template-areas: "james-photo james-text";
       grid-template-columns: 5fr 3fr;
       margin-top: 75px; } }
   @media (min-width: 992px) {
-    #celebs-content #james-container {
+    #james-container {
       grid-template-areas: "james-photo . james-text .";
       grid-template-columns: 7fr 1fr 3fr 1fr; } }
-  #celebs-content #james-container #james-container-photo {
-    grid-area: james-photo;
-    background-image: url("../img/celebs/james.png");
-    background-position: right;
-    width: auto;
-    height: 70vh;
-    margin-left: 20px;
-    background-size: auto 100%;
-    background-repeat: no-repeat; }
-    @media (min-width: 768px) {
-      #celebs-content #james-container #james-container-photo {
-        height: 75vh; } }
-    @media (min-width: 992px) {
-      #celebs-content #james-container #james-container-photo {
-        background-position: left;
-        height: auto; } }
-    @media (min-width: 1200px) {
-      #celebs-content #james-container #james-container-photo {
-        background-position: right; } }
-  #celebs-content #james-container #james-container-text {
-    grid-area: james-text; }
-    #celebs-content #james-container #james-container-text hr {
+  #james-container #james-container-photo {
+    grid-area: james-photo; }
+    #james-container #james-container-photo img {
+      width: 100%;
+      height: auto;
+      margin-left: 20px;
+      object-fit: cover; }
+      @media (min-width: 768px) {
+        #james-container #james-container-photo img {
+          margin-left: 0px; } }
+  #james-container #james-container-text {
+    grid-area: james-text;
+    overflow: hidden; }
+    #james-container #james-container-text hr {
       border: solid 5px #C57149;
       margin-top: 0; }
-    #celebs-content #james-container #james-container-text h3 {
+    #james-container #james-container-text h3 {
       margin: 0 20px; }
-    #celebs-content #james-container #james-container-text p {
+    #james-container #james-container-text p {
       margin: 0 20px; }
     @media (min-width: 992px) {
-      #celebs-content #james-container #james-container-text {
+      #james-container #james-container-text {
         padding-bottom: 150px;
         padding-top: 150px; } }
 /* =============

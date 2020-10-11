@@ -5,9 +5,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const joeTL = gsap.timeline();
 
-joeTL.from("#joe-container-photo", {duration: 1, x: 2000, alpha:0})
-        .from("#joe-hr", {duration: .5, x:-2000})
-        .from("#joe-container-text h3", {duration: .5, x:-2000})
+joeTL.from("#joe-container-photo", {duration: 1, x: 2000, alpha:0}, "sameTime")
+        .from("#joe-hr", {duration: .5, x:-2000}, "sameTime")
+        .from("#joe-container-text h3", {duration: .5, x:-2000}, "-=.5")
         .from("#joe-container-text p", {duration: .5, x:-2000, stagger: .2});
 
 

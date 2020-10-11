@@ -65,8 +65,9 @@
     //text-align: right;
     position: relative;
 
-    button{
+#close-icon{
         position: absolute;
+        font-size: rem-calc(30);
         right:20px;
         bottom:20px;
         color:$white;

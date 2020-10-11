@@ -21,3 +21,15 @@ a {
     transition: 0.25s;
 }
 
+.xl-grid{
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". content .";
+    
+        >div{
+            grid-area: content;
+        }
+    }
+
+}

@@ -38,6 +38,7 @@
 }
 
 #celebs-content {
+    overflow: hidden;
 
     
 
@@ -61,22 +62,32 @@
 
         #marilyn-container-photo{
             grid-area: marilyn-photo;
-            background-image: url("../img/celebs/marilyn.png");
-                background-position: right;
+            margin-right: 20px;
+
+            @include md{
+                margin-right: 0px;
+            }
+            }
+            // background-image: url("../img/celebs/marilyn.png");
+                // background-position: right;
                 // background-size: cover;
                 // background-repeat: no-repeat;
                 // width: auto;
                 // height: 100vh;
-                width: auto;
-                height: 70vh;
-                margin-right: 20px;
-                margin-top: 75px;
-                background-size: auto 100%;
-                background-repeat: no-repeat;
-                background-position: right;
+                img{
+
+                    width: 100%;
+                    height: auto;
+                    margin-top: 75px;
+                    object-fit: cover;
+                }
+                
+                // background-size: auto 100%;
+                // background-repeat: no-repeat;
+                // background-position: right;
 
                 @include md{
-                    height: auto;
+                    // height: auto;
                 }
             
 
@@ -84,6 +95,7 @@
 
         #marilyn-container-text{
             grid-area: marilyn-text;
+            overflow: hidden;
             hr{
                 border: solid 5px $red;
                 margin-top: 0;
@@ -128,27 +140,30 @@
 
         #joe-container-photo{
             grid-area: joe-photo;
-            background-image: url("../img/celebs/joe.png");
-                background-position: left;
+            // background-image: url("../img/celebs/joe.png");
+                // background-position: left;
                 // background-size: cover;
                 // background-repeat: no-repeat;
                 // width: 100%;
                 // height: auto;
-                width: auto;
-                height: 80vh;
-                background-position: right;
-                margin-left: 20px;
-                background-size: auto 100%;
-                background-repeat: no-repeat;
+                // width: auto;
+                // height: 80vh;
+                // background-position: right;
+                // margin-left: 20px;
+                // background-size: auto 100%;
+                // background-repeat: no-repeat;
 
-                @include md{
-                    height: 70vh;
-                }
-                @include lg{
-                    background-position: left;
+                img{
+
+                    width: 100%;
                     height: auto;
+                    margin-left: 20px;
+                    object-fit: cover;
+
+                    @include md{
+                        margin-left: 0px;
+                    }
                 }
-                
             
 
         }
@@ -201,26 +216,25 @@
 
         #james-container-photo{
             grid-area: james-photo;
-            background-image: url("../img/celebs/james.png");
-                background-position: right;
+            // background-image: url("../img/celebs/james.png");
+            //     background-position: right;
                 // background-size: cover;
                 // background-repeat: no-repeat;
-                width: auto;
-                height: 70vh;
-                margin-left: 20px;
-                background-size: auto 100%;
-                background-repeat: no-repeat;
+                // width: auto;
+                // height: 70vh;
+                // margin-left: 20px;
+                // background-size: auto 100%;
+                // background-repeat: no-repeat;
+                img{
 
-                @include md{
-                    height: 75vh;
-                }
-                @include lg{
-                    background-position: left;
+                    width: 100%;
                     height: auto;
-                }
+                    margin-left: 20px;
+                    object-fit: cover;
 
-                @include xl{
-                    background-position: right;
+                    @include md{
+                        margin-left: 0px;
+                    }
                 }
                 
 
@@ -228,6 +242,7 @@
 
         #james-container-text{
             grid-area: james-text;
+            overflow: hidden;
             hr{
                 border: solid 5px $orange;
                 margin-top: 0;
@@ -252,4 +267,3 @@
         }
     }
 
-}
