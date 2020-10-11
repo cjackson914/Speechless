@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/deploy/celebs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/celebs.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -83,9 +91,9 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/celebs.html",
-		"oF": 0
+		"oA": 0,
+		"oAP": "/deploy/celebs.html",
+		"oF": 2
 		},
 	"/dev/content/celebs-content.kit": {
 		"cB": 0,
@@ -216,7 +224,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/celebs-marilyn-min.js",
 		"oF": 1,
 		"sC": 3,
@@ -230,6 +238,17 @@
 		"oA": 0,
 		"oAP": "/dev/js/demo-min.js",
 		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/nav-click.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/nav-click-min.js",
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -248,7 +267,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/overview.html",
 		"oF": 0
 		},
@@ -464,7 +483,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/story.html",
 		"oF": 0
 		},
@@ -472,7 +491,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/stutter.html",
 		"oF": 0
 		},
@@ -480,7 +499,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/tips.html",
 		"oF": 0
 		},
@@ -519,6 +538,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/jquery/dist/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/jquery/dist/jquery-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

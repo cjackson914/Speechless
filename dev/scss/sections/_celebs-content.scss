@@ -1,31 +1,45 @@
 /* =============
     Celebs
 ============= */
+#celebs-header{
+    background-color: $red;
+    // height: 10vh;
+    padding: 20px;
+    position: relative;
+    
+
+    @include md{
+        // height: 20vh;
+    }
+
+    display: grid;
+    grid-template-columns: 80% auto;
+
+    >div{
+
+    }
+
+    #burger-container{
+        color: white;
+        font-size: rem-calc(30);
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        // text-align: right;
+        // position: absolute;
+        // bottom: 20px;
+        // right: 20px;
+
+        i{
+            cursor: pointer;
+        }
+    }
+}
 
 #celebs-content {
 
-    #celebs-header{
-        background-color: $red;
-        height: 10vh;
-        padding: 20px;
-        position: relative;
-        
-
-        @include md{
-            height: 30vh;
-        }
-
-        #burger-container{
-            color: white;
-            font-size: rem-calc(30);
-            text-align: right;
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-
-            
-        }
-    }
+    
 
     #marilyn-container {
         display: grid;
@@ -33,12 +47,11 @@
         "marilyn-text";
         grid-template-columns: 1fr;
         grid-template-rows: 2;
-        margin-top: 50px;
+        // margin-top: 50px;
 
         @include md{
             grid-template-areas: "marilyn-photo marilyn-text";
             grid-template-columns: 5fr 3fr;
-            margin-top: 75px;
         }
 
         @include lg{
@@ -57,6 +70,7 @@
                 width: auto;
                 height: 70vh;
                 margin-right: 20px;
+                margin-top: 75px;
                 background-size: auto 100%;
                 background-repeat: no-repeat;
                 background-position: right;

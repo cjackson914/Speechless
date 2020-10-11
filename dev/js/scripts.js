@@ -1,8 +1,13 @@
 // import {gsap} from "gsap";
 
+import $ from "jquery"
+
 import {celebsMarilynAnimation} from "./celebs-marilyn.js";
 import {celebsJoeAnimation} from "./celebs-joe.js";
 import {celebsJamesAnimation} from "./celebs-james.js";
+
+import {burgerClicked} from "./nav-click.js";
+import {closeClicked} from "./nav-click.js";
 
 
 // call celebs Marilyn Photo function
@@ -26,3 +31,9 @@ celebsJamesAnimation();
 //         .add(lineNavy2Animation())
 //         .add(lineOrangeAnimation())
 //         .play();
+
+
+$("#burger-icon").on("click",burgerClicked);
+
+$(".stutter button").on("click",closeClicked);
+

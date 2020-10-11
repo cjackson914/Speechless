@@ -420,11 +420,17 @@ textarea {
     Navigation
 ============= */
 #nav {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: grid;
+  z-index: 1000;
   height: 100vh;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "what story" "tips celebs" "stutter stutter"; }
+  grid-template-areas: "what story" "tips celebs" "stutter stutter";
+  width: 100%;
+  display: none; }
   @media (min-width: 768px) {
     #nav {
       height: 30vh; } }
@@ -454,7 +460,15 @@ textarea {
   grid-area: stutter;
   background-color: #C57149;
   padding: 20px;
-  text-align: right; }
+  position: relative; }
+  .stutter button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
 
 /* =============
     Header
@@ -465,33 +479,30 @@ textarea {
 /* =============
     Celebs
 ============= */
-#celebs-content #celebs-header {
+#celebs-header {
   background-color: #C13D49;
-  height: 10vh;
   padding: 20px;
-  position: relative; }
-  @media (min-width: 768px) {
-    #celebs-content #celebs-header {
-      height: 30vh; } }
-  #celebs-content #celebs-header #burger-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80% auto; }
+  #celebs-header #burger-container {
     color: white;
     font-size: 1.875rem;
-    text-align: right;
-    position: absolute;
-    bottom: 20px;
-    right: 20px; }
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    #celebs-header #burger-container i {
+      cursor: pointer; }
 
 #celebs-content #marilyn-container {
   display: grid;
   grid-template-areas: "marilyn-photo" "marilyn-text";
   grid-template-columns: 1fr;
-  grid-template-rows: 2;
-  margin-top: 50px; }
+  grid-template-rows: 2; }
   @media (min-width: 768px) {
     #celebs-content #marilyn-container {
       grid-template-areas: "marilyn-photo marilyn-text";
-      grid-template-columns: 5fr 3fr;
-      margin-top: 75px; } }
+      grid-template-columns: 5fr 3fr; } }
   @media (min-width: 992px) {
     #celebs-content #marilyn-container {
       grid-template-areas: "marilyn-photo . marilyn-text .";
@@ -503,6 +514,7 @@ textarea {
     width: auto;
     height: 70vh;
     margin-right: 20px;
+    margin-top: 75px;
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: right; }

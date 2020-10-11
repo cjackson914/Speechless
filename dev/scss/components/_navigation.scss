@@ -3,8 +3,11 @@
 ============= */
 
 #nav {
-
+    position: absolute;
+    top:0;
+    left: 0;
     display: grid;
+    z-index: 1000;
     height: 100vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -12,11 +15,14 @@
     "what story"
     "tips celebs"
     "stutter stutter";
+    width: 100%;
 
 
     @include md{
         height: 30vh;
     }
+
+    display: none;
     
 
 }
@@ -31,9 +37,12 @@
     grid-area: story;
     background-color: $blue;
     padding: 20px;
+    
     h1{
         line-height: rem-calc(30);
     }  
+
+    
 
 }
 
@@ -53,6 +62,18 @@
     grid-area: stutter;
     background-color: $orange;
     padding: 20px;
-    text-align: right;
+    //text-align: right;
+    position: relative;
+
+    button{
+        position: absolute;
+        right:20px;
+        bottom:20px;
+        color:$white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
 }
 
