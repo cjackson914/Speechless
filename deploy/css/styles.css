@@ -517,9 +517,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  position: -webkit-sticky;
-  /* Safari */
   top: 0;
   z-index: 1000;
   background-color: #fff; }
